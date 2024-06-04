@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+    /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-    line-height: 1;
+    line-height: 1.5;
 }
 ol, ul {
     list-style: none;
@@ -58,12 +58,12 @@ img{
   box-sizing: border-box;
 }
 
-.wrap{
-    display: flex;
-    flex-wrap: wrap;
+.container{
+    width: 1296px;
     margin: 0 auto;
-    
 }
+
+
 
 /* header */
 
@@ -73,8 +73,9 @@ img{
 .header{
     display: flex;
     margin: 0 auto;
-    height: 96px;
     align-items: center;
+    justify-content: space-between;
+    width: 80%;
 }
 
 .hamburger{
@@ -82,8 +83,8 @@ img{
 }
 
 .header img{
+    margin-top: 28px;
     width: 90px;
-    height: 40px;
 }
 
 
@@ -91,11 +92,12 @@ img{
 .list{
     display: flex;
     align-items: center;
-    margin-left: 720px;
+    margin-left: 318px;
 }
 
 .list ol{
     display: flex;
+    margin-top: 32px;
 }
 
 .list ol li{
@@ -150,6 +152,7 @@ img{
 }
 
 .blog-title h2{
+    line-height: 1.2;
     font-size: 32px;
     margin-right: 16px;
     margin-left: 16px;
@@ -175,7 +178,7 @@ img{
     display: flex;
    flex-wrap: wrap;
    width: 100%;
-   max-width: 1100px;
+   max-width: 966px;
 }
 
 .article,.menu{
@@ -204,12 +207,11 @@ img{
     display: flex;
     width: 100%;
     max-width: 550px;
-    height: 32px;
+   
 }
 
 .word li{
     margin-right: 16px;
-    height: 32px;
     padding: 4px 12px 4px 12px;
     gap: 10px;
     border-radius: 16px;
@@ -233,6 +235,7 @@ img{
     font-weight: 600;
     line-height: 24px;
     text-align: left;
+    margin-top: 20px;
 }
 
 .word p{
@@ -255,7 +258,7 @@ img{
 
 
 .menu{
-    width: 300px;
+    max-width: 306px;
     background-color: #f2f2f2;
 }
 
@@ -288,19 +291,19 @@ img{
     width: 100%;
   }
 
-  .footer{
-    width: 100%;
+  .footer-wrap{
+    width: 80%;
     display: flex;
-    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
   }
 
-  .footer{
-    height: 450px;
-  }
 
 
   .contact-left{
-    margin-left: 312px;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .question,.question2{
@@ -314,19 +317,14 @@ img{
   }
 
 
-  .contact-right{
-    
-    margin-left: 304px;
-  }
-
   .contact-right li{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
   }
 
   .contact-right li{
-    width: 306px;
     height:72px;
     padding: 8px 24px 8px 24px;
     gap: 8px;
