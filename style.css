@@ -108,7 +108,9 @@ img{
 /* header iPhone */
 
 @media (max-width:500px) {
-   
+
+
+
     .hamburger{
         display: block;
         margin-left: 323px;
@@ -173,7 +175,7 @@ img{
     margin-top: 24px;
 }
 
-/* content */
+/* content  */
 
 .article{
     display: flex;
@@ -243,20 +245,6 @@ img{
     margin-top: 16px;
 }
 
-@media(max-width:768px){
-   
-
-    .card img{
-        margin-left: 40px;
-        height: auto;
-    }
-
-    .word,h2,p{
-        margin-top: 16px;
-    }
-}
-
-
 
 .menu{
     width: 306px;
@@ -279,6 +267,54 @@ img{
     text-align: left;
     margin-top: 32px;
 }
+
+
+/* content iPhone */
+
+@media(max-width:768px){
+   
+    .container{
+        width: 306px;
+        flex-direction: column-reverse;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 306px;
+        flex-wrap: wrap;
+    }
+
+    .card img{
+        height: auto;
+    }
+
+    .word,h2,p{
+        margin-top: 16px;
+    }
+
+    .menu{
+        height: 68px;
+        overflow-x: auto;
+    }
+
+    .menu ol{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+    }
+    
+    .menu ol li{
+        font-family:Noto Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+    }
+
+   
+}
+
 
 
 /* footer */
@@ -341,17 +377,23 @@ img{
   }
 
 
+  /* footer  iPhone*/
+
   @media (max-width:768px) {
 
-    .footer{
+    .footer-wrap{
         flex-direction: column;
     }
 
     
     .contact-left{
         margin-left: 12px;
-        padding-top: 40px;
+        padding-top: 0px;
         padding-bottom: 40px;
+      }
+
+      .contact-left img{
+        width: 120px;
       }
 
       .contact-right{
